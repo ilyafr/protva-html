@@ -1,0 +1,35 @@
+
+.documents {
+	max-width: 600px;
+	position: relative;
+	&,
+	& li {
+		list-style-type: none;
+		padding: 0px;
+	}
+	&,
+	& li p {
+		margin: 0px;
+	}
+	& li {
+		position: relative;
+		padding-left: 38px;
+		line-height: 1.16;
+		margin: 0px 0px 1.15em;
+		a {
+			color: @white;
+			&,
+			&:hover {
+				text-decoration: none;
+			}
+			&:hover {
+				color: #daecbe;
+			}
+		}
+		.icons {
+			position: absolute;
+			left: 0px;
+			margin: -0.4em 0px 0px;
+		}
+	}
+}

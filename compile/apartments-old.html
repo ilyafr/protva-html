@@ -1,0 +1,1143 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Квартиры
+		</title>
+
+		<link rel="stylesheet" href="stylesheets/app.min.css" />
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- [font-family: 'Tinos', serif;] -->
+		<link href='http://fonts.googleapis.com/css?family=Tinos:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+
+	</head>
+	<body>
+		<header class="header container-fluid">
+	<a id="logo" href="main.html">
+		<img src="images/protva-logo.png" width="102" height="103" alt="" />
+	</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 header--left-col">
+				<nav class="header-nav row">
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="about.html">
+							О квартале
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="territory.html">
+							Территория
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item header-nav__item--active" href="apartments.html">
+							Квартиры
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="col-xs-12 header--right-col">
+				<nav class="header-nav row">
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="hypothec.html">
+							Ипотека
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="developer.html">
+							Застройщик
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="contacts.html">
+							Контакты
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+		
+		<div class="content" role="content">
+			
+
+<div id="ajax-replaced" class="container">
+	<div class="page">
+		
+		<h1 class="page__title">
+			Квартиры в жилом квартале «Протва Центр»
+		</h1>
+		
+		<p>
+			Вы можете выбрать любую квартиру в жилом квартале «Протва Центр» и ознакомиться с планировкой и особенностями каждого помещения. Для этого нужно выбрать дом, затем, воспользовавшись планом дома можно выбрать этаж, а на этаже одну из четырех квартир.
+		</p>
+		
+		<p>
+			Для получения более подробной информации свяжитесь с нашим <a href="#">отделом продаж</a>
+		</p>
+		
+		<div id="hses" class="houses">
+			
+			<div class="houses__info ibadge ibadge--big-bottom-arrow ibadge--relative">
+				<div class="houses__info-in">
+					<p>
+						выберите дом, ниже будет указана подробная информация
+					</p>
+					<p>
+						<span class="houses__info-color"><i class="icons icons-color icons-color--green"></i>&nbsp;&mdash;&nbsp;1 этап строительства</span>
+						<span class="houses__info-color"><i class="icons icons-color icons-color--yellow"></i>&nbsp;&mdash;&nbsp;2 этап строительства</span>
+						<span class="houses__info-color"><i class="icons icons-color icons-color--red"></i>&nbsp;&mdash;&nbsp;3 этап строительства</span>
+					</p>
+				</div>
+			</div>
+			
+			<div class="houses__scheme js-houses-scheme">
+				<img usemap="#map-houses" class="js-houses__img houses__scheme-img" src="images/content/scheme-of-house/img-1.png" width="912" height="463" alt="" />
+				<map class="houses__map js-houses__map" name="map-houses">
+					<!-- [data-sclto   - is panel is target to scrolling] -->
+					<!-- [data-hse-num - number of house] -->
+					<!-- [data-bld-phs - build phase] -->
+					<!-- [data-apt-cnt - apartment count in house] -->
+					<area 
+							class="houses__area houses__area--1 js-houses__area js-houses__area--phase-1 active" 
+							id="are-hse-1" 
+							data-sclto="sclto-hse" 
+							data-hse-num="1" 
+							data-bld-phs="1" 
+							data-apt-cnt="15" 
+							data-ajx-hse="houses/house-1.html" 
+							shape="poly" 
+							coords="102,196,128,232,158,234,208,198,182,162,155,156"
+					/>
+					<area 
+							class="houses__area houses__area--2 js-houses__area js-houses__area--phase-1" 
+							id="are-hse-2" 
+							data-sclto="sclto-hse" 
+							data-hse-num="2" 
+							data-bld-phs="1" 
+							data-apt-cnt="13" 
+							data-ajx-hse="houses/house-2.html" 
+							shape="poly" 
+							coords="149,259,173,297,197,295,250,260,227,224,204,223"
+					/>
+					<area 
+							class="houses__area houses__area--3 js-houses__area js-houses__area--phase-1" 
+							id="are-hse-3" 
+							data-sclto="sclto-hse" 
+							data-hse-num="3" 
+							data-bld-phs="1" 
+							data-apt-cnt="18" 
+							data-ajx-hse="houses/house-3.html" 
+							shape="poly" 
+							coords="203,153,242,206,260,209,295,184,261,134,240,127"
+					/>
+					<area 
+							class="houses__area houses__area--4 js-houses__area js-houses__area--phase-2" 
+							id="are-hse-4" 
+							data-sclto="sclto-hse" 
+							data-hse-num="4" 
+							data-bld-phs="2" 
+							data-apt-cnt="9" 
+							data-ajx-hse="houses/house-4.html" 
+							shape="poly" 
+							coords="292,126,329,180,344,185,379,159,346,113,329,101"
+					/>
+					<area 
+							class="houses__area houses__area--5 js-houses__area js-houses__area--phase-2" 
+							id="are-hse-5" 
+							data-sclto="sclto-hse" 
+							data-hse-num="5" 
+							data-bld-phs="2" 
+							data-apt-cnt="14" 
+							data-ajx-hse="houses/house-5.html" 
+							shape="poly" 
+							coords="348,240,401,276,413,277,437,238,385,204,373,201"
+					/>
+					<area 
+							class="houses__area houses__area--6 js-houses__area js-houses__area--phase-3" 
+							id="are-hse-6" 
+							data-sclto="sclto-hse" 
+							data-hse-num="6" 
+							data-bld-phs="3" 
+							data-apt-cnt="13" 
+							data-ajx-hse="houses/house-6.html" 
+							shape="poly" 
+							coords="426,354,482,392,507,354,509,340,460,309,452,316"
+					/>
+					<area 
+							class="houses__area houses__area--7 js-houses__area js-houses__area--phase-2" 
+							id="are-hse-7" 
+							data-sclto="sclto-hse" 
+							data-hse-num="7" 
+							data-bld-phs="2" 
+							data-apt-cnt="5" 
+							data-ajx-hse="houses/house-7.html" 
+							shape="poly" 
+							coords="416,186,470,223,477,224,499,190,496,183,441,148"
+					/>
+					<area 
+							class="houses__area houses__area--8 js-houses__area js-houses__area--phase-3" 
+							id="are-hse-8" 
+							data-sclto="sclto-hse" 
+							data-hse-num="8" 
+							data-bld-phs="3" 
+							data-apt-cnt="2" 
+							data-ajx-hse="houses/house-8.html" 
+							shape="poly" 
+							coords="508,293,564,329,590,289,533,252"
+					/>
+					<area 
+							class="houses__area houses__area--9 js-houses__area js-houses__area--phase-2" 
+							id="are-hse-9" 
+							data-sclto="sclto-hse" 
+							data-hse-num="9" 
+							data-bld-phs="2" 
+							data-apt-cnt="8" 
+							data-ajx-hse="houses/house-9.html" 
+							shape="poly" 
+							coords="490,137,491,147,543,179,568,142,570,135,515,100"
+					/>
+					<area 
+							class="houses__area houses__area--10 js-houses__area js-houses__area--phase-3" 
+							id="are-hse-10" 
+							data-sclto="sclto-hse" 
+							data-hse-num="10" 
+							data-bld-phs="3" 
+							data-apt-cnt="16" 
+							data-ajx-hse="houses/house-10.html" 
+							shape="poly" 
+							coords="578,242,626,275,641,275,665,238,610,203,602,207"
+					/>
+					<area 
+							class="houses__area houses__area--11 js-houses__area js-houses__area--phase-3" 
+							id="are-hse-11" 
+							data-sclto="sclto-hse" 
+							data-hse-num="11" 
+							data-bld-phs="3" 
+							data-apt-cnt="4" 
+							data-ajx-hse="houses/house-11.html" 
+							shape="poly" 
+							coords="638,182,686,214,704,211,728,174,673,139,654,154"
+					/>
+				</map>
+				<span class="houses__scheme-num houses__scheme-num--1">1</span>
+				<span class="houses__scheme-num houses__scheme-num--2">2</span>
+				<span class="houses__scheme-num houses__scheme-num--3">3</span>
+				<span class="houses__scheme-num houses__scheme-num--4">4</span>
+				<span class="houses__scheme-num houses__scheme-num--5">5</span>
+				<span class="houses__scheme-num houses__scheme-num--6">6</span>
+				<span class="houses__scheme-num houses__scheme-num--7">7</span>
+				<span class="houses__scheme-num houses__scheme-num--8">8</span>
+				<span class="houses__scheme-num houses__scheme-num--9">9</span>
+				<span class="houses__scheme-num houses__scheme-num--10">10</span>
+				<span class="houses__scheme-num houses__scheme-num--11">11</span>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4 col-xs-offset-7 p-l-0 p-r-0">
+					<div class="house-info">
+						<span id="sclto-hse" class="house-info__num">дом № <span id="hse-num">2</span></span>
+						<span class="house-info__build-stage"><span id="bld-phs">1</span> этап<br />строительства</span>
+						<span class="house-info__apartment-title">количество<br />доступных<br />квартир:</span>
+						<a href="#" id="apt-cnt" class="house-info__apartment-num">18</a>
+						<span class="ibadge ibadge--mid-left house-info__apartment-ibadge">кликните, чтобы<br />подсветить<br />доступные квартиры</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-19">
+
+					<div id="floors-scheme" class="floors-scheme js-floors-scheme">
+						
+						<!-- [Floor-1] -->
+						<div id="flrs-scm-1" class="floors-scheme__item floors-scheme__item--1">
+							<img usemap="#map-floors-1" class="floors-scheme__img js-floors__img" src="images/content/scheme-of-floors/floor-1-686x512.png" width="686" height="512" alt="" />
+							<map class="js-floors__map js-floors__map--1" name="map-floors-1">
+
+								<!-- [data-hse-num2 - change House num on green-panel] -->
+								<!-- [data-apt-num - change Apartment number on green-panel] -->
+								<!-- [data-apt-ttl - change name of Floor on green-panel] -->
+								<!-- [data-apt-trg - show Apartment size scheme] -->
+							
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-4" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="4" 
+										data-apt-trg="1" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="281,380,4,382,17,299,45,299,44,301,65,300,66,280,38,280,52,185,286,185,283,276,279,275,278,326,283,326"
+								/>
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-1" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="1" 
+										data-apt-trg="2" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="287,175,289,129,298,129,298,153,340,153,340,85,387,85,385,16,358,16,358,3,328,3,329,16,62,15,52,77,76,77,76,75,95,75,92,91,66,91,54,176,287,176"
+								/>
+								
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-2" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="2" 
+										data-apt-trg="3" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="400,175,399,128,387,128,388,153,347,152,348,90,402,89,400,56,397,55,396,16,625,14,634,75,609,75,609,72,591,73,593,90,619,89,633,175"
+								/>
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-3" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="3" 
+										data-apt-trg="4" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="401,185,634,185,649,279,620,279,623,299,643,299,643,297,669,297,683,382,406,379,405,324,408,324,407,281,404,281"
+								/>
+							
+							</map>
+						</div>
+						<!-- [/Floor-1] -->
+						
+						<!-- [Floor-2] -->
+						<div id="flrs-scm-2" class="floors-scheme__item floors-scheme__item--2 dnone">
+							<img usemap="#map-floors-2" class="floors-scheme__img js-floors__img" data-layzr="images/content/scheme-of-floors/floor-2-686x522.png" width="686" height="522" alt="" />
+							<map class="js-floors__map js-floors__map--2" name="map-floors-2">
+
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-4" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="8" 
+										data-apt-trg="1" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="281,380,4,382,17,299,45,299,44,301,65,300,66,280,38,280,52,185,286,185,283,276,279,275,278,326,283,326"
+								/>
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-1" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="5" 
+										data-apt-trg="2" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="287,175,289,129,298,129,298,153,340,153,340,85,387,85,385,16,358,16,358,3,328,3,329,16,62,15,52,77,76,77,76,75,95,75,92,91,66,91,54,176,287,176"
+								/>
+								
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-2" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="6" 
+										data-apt-trg="3" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="400,175,399,128,387,128,388,153,347,152,348,90,402,89,400,56,397,55,396,16,625,14,634,75,609,75,609,72,591,73,593,90,619,89,633,175"
+								/>
+								<area 
+										class="js-floors__area reserv" 
+										id="are-flo-3" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="7" 
+										data-apt-trg="4" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="401,185,634,185,649,279,620,279,623,299,643,299,643,297,669,297,683,382,406,379,405,324,408,324,407,281,404,281"
+								/>
+							
+							</map>
+						</div>
+						<!-- [/Floor-2] -->
+						
+						<!-- [Floor-3] -->
+						<div id="flrs-scm-3" class="floors-scheme__item floors-scheme__item--3 dnone">
+							<img usemap="#map-floors-3" class="floors-scheme__img js-floors__img" data-layzr="images/content/scheme-of-floors/floor-3-686x530.png" width="686" height="530" alt="" />
+							<map class="js-floors__map js-floors__map--3" name="map-floors-3">
+
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-4" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="12" 
+										data-apt-trg="1" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="281,380,4,382,17,299,45,299,44,301,65,300,66,280,38,280,52,185,286,185,283,276,279,275,278,326,283,326"
+								/>
+								<area 
+										class="js-floors__area sold" 
+										id="are-flo-1" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="9" 
+										data-apt-trg="2" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="287,175,289,129,298,129,298,153,340,153,340,85,387,85,385,16,358,16,358,3,328,3,329,16,62,15,52,77,76,77,76,75,95,75,92,91,66,91,54,176,287,176"
+								/>
+								
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-2" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="10" 
+										data-apt-trg="3" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="400,175,399,128,387,128,388,153,347,152,348,90,402,89,400,56,397,55,396,16,625,14,634,75,609,75,609,72,591,73,593,90,619,89,633,175"
+								/>
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-3" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="11" 
+										data-apt-trg="4" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="401,185,634,185,649,279,620,279,623,299,643,299,643,297,669,297,683,382,406,379,405,324,408,324,407,281,404,281"
+								/>
+							
+							</map>
+						</div>
+						<!-- [/Floor-3] -->
+						
+						<!-- [Floor-4] -->
+						<div id="flrs-scm-4" class="floors-scheme__item floors-scheme__item--4 dnone">
+							<img usemap="#map-floors-4" class="floors-scheme__img js-floors__img" data-layzr="images/content/scheme-of-floors/floor-4-686x537.png" width="686" height="537" alt="" />
+							<map class="js-floors__map js-floors__map--4" name="map-floors-4">
+
+								<area 
+										class="js-floors__area reserv" 
+										id="are-flo-4" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="16" 
+										data-apt-trg="1" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="281,380,4,382,17,299,45,299,44,301,65,300,66,280,38,280,52,185,286,185,283,276,279,275,278,326,283,326"
+								/>
+								<area 
+										class="js-floors__area reserv" 
+										id="are-flo-1" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="13" 
+										data-apt-trg="2" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="287,175,289,129,298,129,298,153,340,153,340,85,387,85,385,16,358,16,358,3,328,3,329,16,62,15,52,77,76,77,76,75,95,75,92,91,66,91,54,176,287,176"
+								/>
+								
+								<area 
+										class="js-floors__area sold" 
+										id="are-flo-2" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="14" 
+										data-apt-trg="3" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="400,175,399,128,387,128,388,153,347,152,348,90,402,89,400,56,397,55,396,16,625,14,634,75,609,75,609,72,591,73,593,90,619,89,633,175"
+								/>
+								<area 
+										class="js-floors__area reserv" 
+										id="are-flo-3" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="15" 
+										data-apt-trg="4" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="401,185,634,185,649,279,620,279,623,299,643,299,643,297,669,297,683,382,406,379,405,324,408,324,407,281,404,281"
+								/>
+							
+							</map>
+						</div>
+						<!-- [/Floor-4] -->
+						
+						<!-- [Floor-5] -->
+						<div id="flrs-scm-5" class="floors-scheme__item floors-scheme__item--5 dnone">
+							<img usemap="#map-floors-5" class="floors-scheme__img js-floors__img" data-layzr="images/content/scheme-of-floors/floor-5-686x543.png" width="686" height="543" alt="" />
+							<map class="js-floors__map js-floors__map--5" name="map-floors-5">
+								
+								<area 
+										class="js-floors__area reserv" 
+										id="are-flo-4" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="20" 
+										data-apt-trg="1" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="281,380,4,382,17,299,45,299,44,301,65,300,66,280,38,280,52,185,286,185,283,276,279,275,278,326,283,326"
+								/>
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-1" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="17" 
+										data-apt-trg="2" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="287,175,289,129,298,129,298,153,340,153,340,85,387,85,385,16,358,16,358,3,328,3,329,16,62,15,52,77,76,77,76,75,95,75,92,91,66,91,54,176,287,176"
+								/>
+								
+								<area 
+										class="js-floors__area sale" 
+										id="are-flo-2" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="18" 
+										data-apt-trg="3" 
+										data-apt-ttl="Двухкомнатная квартира" 
+										shape="poly" 
+										coords="400,175,399,128,387,128,388,153,347,152,348,90,402,89,400,56,397,55,396,16,625,14,634,75,609,75,609,72,591,73,593,90,619,89,633,175"
+								/>
+								<area 
+										class="js-floors__area sold" 
+										id="are-flo-3" 
+										data-sclto="sclto-apt" 
+										data-hse-num2="1" 
+										data-apt-num="19" 
+										data-apt-trg="4" 
+										data-apt-ttl="Однокомнатная квартира" 
+										shape="poly" 
+										coords="401,185,634,185,649,279,620,279,623,299,643,299,643,297,669,297,683,382,406,379,405,324,408,324,407,281,404,281"
+								/>
+							
+							</map>
+						</div>
+						<!-- [/Floor-5] -->
+						
+					</div>
+					
+				</div>
+				<div class="col-xs-5">
+					<div id="js-flos-dre" class="floors-direct">
+						
+						<span class="ibadge ibadge--mid-left-2 house-info__apartment-ibadge">выберите этаж,<br />который хотите посмотреть</span>
+						<!-- [data-flo-num - Number of Floor] -->
+						<!-- [data-flrs-scm - Show Floor scheme [from 1 to 5]] -->
+
+						<a data-flo-num="1" data-flrs-scm="1" class="js-floors-direct__num floors-direct__num active" href=""><span><i>1</i></span></a>
+						<a data-flo-num="2" data-flrs-scm="2" class="js-floors-direct__num floors-direct__num" href=""><span><i>2</i></span></a>
+						<a data-flo-num="3" data-flrs-scm="3" class="js-floors-direct__num floors-direct__num" href=""><span><i>3</i></span></a>
+						<a data-flo-num="4" data-flrs-scm="4" class="js-floors-direct__num floors-direct__num" href=""><span><i>4</i></span></a>
+						<a data-flo-num="5" data-flrs-scm="5" class="js-floors-direct__num floors-direct__num" href=""><span><i>5</i></span></a>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="houses__info ibadge ibadge--big-top-arrow ibadge--relative">
+				<div class="houses__info-in">
+					<p>
+						выберите квартиру и посмотрите подробную информацию о ней
+					</p>
+					<p>
+						<span class="houses__info-color"><i class="icons icons-color icons-color--green"></i>&nbsp;&mdash;&nbsp;доступно</span>
+						<span class="houses__info-color"><i class="icons icons-color icons-color--yellow"></i>&nbsp;&mdash;&nbsp;резерв</span>
+						<span class="houses__info-color"><i class="icons icons-color icons-color--red"></i>&nbsp;&mdash;&nbsp;продано</span>
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+
+<section class="blue-bg">
+	<div class="container">
+
+		<section class="floor-info">
+			<div id="sclto-apt" class="floor-info__pane">
+				<p class="floor-info__pane-title">
+					Дом № <span id="hse-num2" class="floor-info__pane-housenum js-floor-info__pane-housenum">1</span>, квартира № <span id="apt-num" class="floor-info__pane-apartnum js-floor-info__pane-apartnum">19</span>
+				</p>
+				<p class="floor-info__pane-describe">
+					<span id="apt-ttl">Двухкомнатная квартира</span> на <span id="flo-num">3</span> этаже.
+				</p>
+			</div>
+			
+								
+			<!-- [floors-scheme__pane] -->
+			<div class="floors-scheme__pane">
+		
+				<!-- [Apartment scheme - 1] -->
+				<div id="apt-trg-1" class="floor-info__scheme floor-info__scheme--1 js-floor-info__scheme">
+					
+					<div class="row floor-info__sizes">
+						<div class="col-xs-6 col-xs-offset-6">
+							<div class="floor-info__size floor-info__size--relative pull-right p-r-20 p-l-0">
+								<span class="floor-info__size-num">
+									55,5 м<sup>2</sup>
+								</span>
+								<span class="floor-info__size-descr">
+									общая площадь
+								</span>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="floor-info__size floor-info__size--relative pull-left p-l-20 p-r-0">
+								<span class="floor-info__size-num">
+									28,35 м<sup>2</sup>
+								</span>
+								<span class="floor-info__size-descr">
+									жилая площадь
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- [Размеры комнат] -->
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--1">
+						<span class="floor-info__size-num">
+							28,35 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							общая комната
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--2">
+						<span class="floor-info__size-num">
+							2,9 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							ванная
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--3">
+						<span class="floor-info__size-num">
+							1,5 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							туалет
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--4">
+						<span class="floor-info__size-num">
+							1,4 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кладовка
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--5">
+						<span class="floor-info__size-num">
+							7,7 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							прихожая / коридор
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--6">
+						<span class="floor-info__size-num">
+							15,0 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кухня
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--7">
+						<span class="floor-info__size-num">
+							2,7 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							лоджия
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--8">
+						<span class="floor-info__size-num">
+							11,6 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							спальная
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<!-- [/Размеры комнат] -->
+					
+					<img class="floor-info__scheme-img" src="images/content/scheme-of-rooms/room-1.png" alt="" />
+				
+				</div>
+				<!-- [/Apartment scheme - 1] -->
+				
+				<!-- [Apartment scheme - 2] -->
+				<div id="apt-trg-2" class="floor-info__scheme floor-info__scheme--2 js-floor-info__scheme hide">
+					
+					<div class="row floor-info__sizes">
+						<div class="col-xs-6 col-xs-offset-6">
+							<div class="floor-info__size floor-info__size--relative pull-right p-r-20 p-l-0">
+								<span class="floor-info__size-num">
+									71,67 м<sup>2</sup>
+								</span>
+								<span class="floor-info__size-descr">
+									общая площадь
+								</span>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="floor-info__size floor-info__size--relative pull-left p-l-20 p-r-0">
+								<span class="floor-info__size-num">
+									40,27 м<sup>2</sup>
+								</span>
+								<span class="floor-info__size-descr">
+									жилая площадь
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- [Размеры комнат] -->
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--1">
+						<span class="floor-info__size-num">
+							11,6 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							спальная
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--2">
+						<span class="floor-info__size-num">
+							15,0 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кухня
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--3">
+						<span class="floor-info__size-num">
+							11,4 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кабинет
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--4">
+						<span class="floor-info__size-num">
+							13,4 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							прихожая / коридор
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--5">
+						<span class="floor-info__size-num">
+							1,8 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кладовка
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--6">
+						<span class="floor-info__size-num">
+							1,5 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							туалет
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--7">
+						<span class="floor-info__size-num">
+							2,9 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							ванная
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--8">
+						<span class="floor-info__size-num">
+							18,5 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							общая комната
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>				
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--9">
+						<span class="floor-info__size-num">
+							2,7 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							лоджия
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<!-- [/Размеры комнат] -->
+					
+					<img class="floor-info__scheme-img" src="images/content/scheme-of-rooms/room-2.png" alt="" />
+				
+				</div>
+				<!-- [/Apartment scheme - 2] -->
+				
+				<!-- [Apartment scheme - 3] -->
+				<div id="apt-trg-3" class="floor-info__scheme floor-info__scheme--3 js-floor-info__scheme hide">
+					
+					<div class="row floor-info__sizes">
+						<div class="col-xs-6 col-xs-offset-6">
+							<div class="floor-info__size floor-info__size--relative pull-right p-r-20 p-l-0">
+								<span class="floor-info__size-num">
+									60,28 м<sup>2</sup>
+								</span>
+								<span class="floor-info__size-descr">
+									общая площадь
+								</span>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="floor-info__size floor-info__size--relative pull-left p-l-20 p-r-0">
+								<span class="floor-info__size-num">
+									28,88 м<sup>2</sup>
+								</span>
+								<span class="floor-info__size-descr">
+									жилая площадь
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- [Размеры комнат] -->
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--1">
+						<span class="floor-info__size-num">
+							15,0 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кухня
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--2">
+						<span class="floor-info__size-num">
+							11,6 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							спальная
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--3">
+						<span class="floor-info__size-num">
+							2,7 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							лоджия
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--4">
+						<span class="floor-info__size-num">
+							18,5 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							общая комната
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--5">
+						<span class="floor-info__size-num">
+							2,9 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							ванная
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--6">
+						<span class="floor-info__size-num">
+							1,5 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							туалет
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--7">
+						<span class="floor-info__size-num">
+							1,8 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кладовка
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--8">
+						<span class="floor-info__size-num">
+							13,4 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							прихожая / коридор
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<!-- [/Размеры комнат] -->
+					
+					<img class="floor-info__scheme-img" src="images/content/scheme-of-rooms/room-3.png" alt="" />
+				
+				</div>
+				<!-- [/Apartment scheme - 3] -->
+				
+				<!-- [Apartment scheme - 4] -->
+				<div id="apt-trg-4" class="floor-info__scheme floor-info__scheme--4 js-floor-info__scheme hide">
+					
+					<div class="row floor-info__sizes">
+						<div class="col-xs-6 col-xs-offset-6">
+							<div class="floor-info__size floor-info__size--relative pull-right p-r-20 p-l-0">
+								<span class="floor-info__size-num">
+									56,85 м<sup>2</sup>
+								</span>
+								<span class="floor-info__size-descr">
+									общая площадь
+								</span>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="floor-info__size floor-info__size--relative pull-left p-l-20 p-r-0">
+								<span class="floor-info__size-num">
+									28,89 м<sup>2</sup>
+								</span>
+								<span class="floor-info__size-descr">
+									жилая площадь
+								</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- [Размеры комнат] -->
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--1">
+						<span class="floor-info__size-num">
+							1,5 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							туалет
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--2">
+						<span class="floor-info__size-num">
+							2,9 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							ванная
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--3">
+						<span class="floor-info__size-num">
+							18,5 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							общая комната
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--4">
+						<span class="floor-info__size-num">
+							11,6 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							спальная
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--5">
+						<span class="floor-info__size-num">
+							2,7 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							лоджия
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--6">
+						<span class="floor-info__size-num">
+							15,0 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кухня
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--7">
+						<span class="floor-info__size-num">
+							7,7 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							прихожая / коридор
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>
+					<div class="floor-info__size pull-left p-l-20 p-r-0 floor-info__size--8">
+						<span class="floor-info__size-num">
+							1,4 м<sup>2</sup>
+						</span>
+						<span class="floor-info__size-descr">
+							кладовка
+						</span>
+						<div class="floor-info__size-dot"></div>
+					</div>	
+					<!-- [/Размеры комнат] -->
+					
+					<img class="floor-info__scheme-img" src="images/content/scheme-of-rooms/room-4.png" alt="" />
+				
+				</div>
+				<!-- [/Apartment scheme - 4] -->
+			
+			</div>
+			<!-- [floors-scheme__pane] -->
+			
+			<a class="pdf-big floor-info__pdf-big" href="#">
+				<i class="icons icons-pdf-big"></i>
+				<span class="ibadge ibadge--mid-right ibadge--relative">
+					скачайте бланк
+					<br />
+					этой квартиры
+					<br />
+					в формате PDF
+				</span>
+			</a>
+		</section>
+
+	</div>
+</section>
+	
+<section class="green-bg">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-xs-8">
+				
+				<div class="info-pane info-pane--1">
+					<a class="info-pane__href" href="">
+						<img class="info-pane__img" src="images/info-pane/info.png" width="100" height="100" alt="" />
+						<span class="info-pane__title">
+							Подробная информация
+						</span>
+					</a>
+					<p>
+						Уточните стоимость этой квартиры
+						на данный момент и возможность
+						её приобретения в отделе продаж
+						по телефонам:
+						<br />
+						7 (48439) 5-06-08,
+						<br />
+						+7 (910) 917-20-50 
+					</p>
+				</div>
+				
+			</div>
+			<div class="col-xs-8">
+				
+				<div class="info-pane info-pane--2">
+					<a class="info-pane__href" href="">
+						<img class="info-pane__img" src="images/info-pane/phone.png" width="100" height="100" alt="" />
+						<span class="info-pane__title">
+							Обратный звонок
+						</span>
+					</a>
+					<p>
+						Оставьте свой номер телефона
+						и мы вам перезвоним в любое
+						удобное для вас время
+					</p>
+				</div>
+				
+			</div>
+			<div class="col-xs-8">
+				
+				<div class="info-pane info-pane--3">
+					<a class="info-pane__href" href="">
+						<img class="info-pane__img" src="images/info-pane/bookmark.png" width="100" height="100" alt="" />
+						<span class="info-pane__title">
+							Добавить в закладки
+						</span>
+					</a>
+					<p>
+						Сохраните адрес этой страницы
+						в закладках вашего браузера
+						и вы сможете быстро
+						её открыть в любое время
+					</p>
+				</div>
+				
+			</div>
+		</div>
+	
+	</div>
+</section>
+
+		</div>
+		
+		<footer class="footer">
+	<div class="footer--blue-bg blue-bg">
+		<div class="container">
+			<address class="address">
+				<span class="address__phones">+7 (48439) 5-06-08, +7 (910) 917-20-50</span>
+				<a class="address__web" href="#">protva-centr.ru</a>
+				<span class="address__detail">Калужская область, г. Жуков, Жилой квартал "Протва Центр"</span>
+			</address>
+		</div>
+	</div>
+	<div class="footer--bg-none">
+		<div class="container">
+			<div class="copyright">
+				<span class="copyright__year">© 2015,</span> <span class="copyright__name">Ринг Петролиум ЗАО.</span> <a class="copyright__web" href="#">www.ringpetrolium.tk</a> <a class="copyright__declarate" href="#">Проектная декларация</a>
+			</div>
+		</div>
+	</div>
+</footer>
+				
+<script src="javascripts/libs.min.js"></script>
+<script src="javascripts/app.min.js"></script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+	</body>
+</html>

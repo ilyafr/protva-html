@@ -1,0 +1,47 @@
+<header class="header container-fluid">
+	<a id="logo" href="main.html">
+		<img src="images/protva-logo.png" width="102" height="103" alt="" />
+	</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 header--left-col">
+				<nav class="header-nav row">
+					<div class="col-xs-8">
+						<a class="header-nav__item {{#is page.title 'О квартале'}}header-nav__item--active{{/is}}" href="about.html">
+							О квартале
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item {{#is page.title 'Территория'}}header-nav__item--active{{/is}}" href="territory.html">
+							Территория
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item {{#is page.title 'Квартиры'}}header-nav__item--active{{/is}}" href="apartments.html">
+							Квартиры
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="col-xs-12 header--right-col">
+				<nav class="header-nav row">
+					<div class="col-xs-8">
+						<a class="header-nav__item {{#is page.title 'Ипотека'}}header-nav__item--active{{/is}}" href="hypothec.html">
+							Ипотека
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item {{#is page.title 'Застройщик'}}header-nav__item--active{{/is}}" href="developer.html">
+							Застройщик
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item {{#is page.title 'Контакты'}}header-nav__item--active{{/is}}" href="contacts.html">
+							Контакты
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,41 @@
+
+.icons {
+	display: inline-block;
+	vertical-align: middle;
+	&-pdf {
+		.sprite(@pdf);
+	}
+	&-pdf-big {
+		.sprite(@pdf-big);
+	}
+	&-vignette {
+		.sprite(@vignette);
+		margin: -2px 5px 0px 0px;
+	}
+	&-prev {
+		.sprite(@arrow-left);
+		&:hover {
+			.sprite(@arrow-left-green);
+		}
+	}
+	&-next {
+		.sprite(@arrow-right);
+		&:hover {
+			.sprite(@arrow-right-green);
+		}
+	}
+	&-color {
+		width: 24px;
+		height: 24px;
+		border-radius: 3px;
+		&--green {
+			background-color: #9ad283;
+		}
+		&--yellow {
+			background-color: #ffe47f;
+		}
+		&--red {
+			background-color: #fb7e7e;
+		}
+	}
+}

@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>
+			Контакты
+		</title>
+
+		<link rel="stylesheet" href="stylesheets/app.min.css" />
+
+		<!--[if lt IE 9]>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<!-- [font-family: 'Tinos', serif;] -->
+		<link href='http://fonts.googleapis.com/css?family=Tinos:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+
+	</head>
+	<body>
+		<header class="header container-fluid">
+	<a id="logo" href="main.html">
+		<img src="images/protva-logo.png" width="102" height="103" alt="" />
+	</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 header--left-col">
+				<nav class="header-nav row">
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="about.html">
+							О квартале
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="territory.html">
+							Территория
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="apartments.html">
+							Квартиры
+						</a>
+					</div>
+				</nav>
+			</div>
+			<div class="col-xs-12 header--right-col">
+				<nav class="header-nav row">
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="hypothec.html">
+							Ипотека
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item " href="developer.html">
+							Застройщик
+						</a>
+					</div>
+					<div class="col-xs-8">
+						<a class="header-nav__item header-nav__item--active" href="contacts.html">
+							Контакты
+						</a>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+		
+		<div class="content" role="content">
+			
+
+<div class="container">
+	<div class="page contacts">
+		
+		<div class="row contacts__title">
+			<div class="col-xs-11 p-r-0">
+				
+				<h1 class="page__title">
+					Контакты
+				</h1>
+				
+			</div>
+			<div class="col-xs-13">
+				
+				<h1 class="page__title">
+					Отправьте сообщение
+				</h1>
+				
+			</div>
+		</div>
+		
+		<div class="row contacts__white-page">
+			<div class="col-xs-11 p-r-0">
+
+				<ol>
+					<li>
+						Отдел продаж: Калужская область, г. Белоусово, Калужское шоссе, д. 12/3
+					</li>
+					<li>
+						Квартал: Калужская область, г. Жуков, жилой квартал “Протва Центр”
+					</li>
+				</ol>
+				
+			</div>
+			<div class="col-xs-13">
+
+				<form class="form-horizontal" action="" method="post">
+
+					<div class="col-xs-10 p-r-0">
+						<div class="relative">
+							<input id="name" class="form-control" name="name" type="text" placeholder="Ваше имя" />
+						</div>
+						<div class="relative">
+							<span class="form-horizontal__input-star">*</span>
+							<input id="email" name="email" type="email" class="form-control required email" placeholder="Ваш email" />
+						</div>
+						<div class="relative">
+							<span class="form-horizontal__input-star">*</span>
+							<input data-inputmask="'mask': '(999) 999-99-99'" id="phone" name="phone" type="text" class="form-control required js-phone-mask" placeholder="Ваш телефон" />
+						</div>
+					</div>
+					<div class="col-xs-14 p-r-10">
+						<div class="relative">
+							<span class="form-horizontal__input-star">*</span>
+							<textarea id="text" name="text" class="form-control required" placeholder="Сообщение"></textarea>
+						</div>
+						<div class="row">
+							<div class="col-xs-11">
+								<button type="submit" class="btn btn-default">Отправить</button>
+							</div>
+							<div class="col-xs-12 p-l-0 p-r-0">
+								<span class="form-horizontal__comment">
+									<span class="form-horizontal__star">*</span>&nbsp;&mdash;&nbsp;обязательные поля
+								</span>
+							</div>
+						</div>
+					</div>
+
+				</form>
+				
+			</div>
+		</div>
+		
+		<div id="gmap" class="contacts-gmaps"></div>
+		
+	</div>
+</div>
+
+		</div>
+		
+		<footer class="footer">
+	<div class="footer--blue-bg blue-bg">
+		<div class="container">
+			<address class="address">
+				<span class="address__phones">+7 (48439) 5-06-08, +7 (910) 917-20-50</span>
+				<a class="address__web" href="#">protva-centr.ru</a>
+				<span class="address__detail">Калужская область, г. Жуков, Жилой квартал "Протва Центр"</span>
+			</address>
+		</div>
+	</div>
+	<div class="footer--bg-none">
+		<div class="container">
+			<div class="copyright">
+				<span class="copyright__year">© 2015,</span> <span class="copyright__name">Ринг Петролиум ЗАО.</span> <a class="copyright__web" href="#">www.ringpetrolium.tk</a> <a class="copyright__declarate" href="#">Проектная декларация</a>
+			</div>
+		</div>
+	</div>
+</footer>
+				
+<script src="javascripts/libs.min.js"></script>
+<script src="javascripts/app.min.js"></script>
+
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+	</body>
+</html>
